@@ -12,7 +12,7 @@ $con = new PDO("mysql:host=$server;dbname=base",$username,$pass);
 return $con;
 }catch (PDOExeption $e)
 {
-
+die ("Erreuuuur :".$e->getMessage());
 }
 }
 ?>
